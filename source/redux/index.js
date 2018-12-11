@@ -30,7 +30,7 @@ export const UPDATE_STRING = '{{name}}/UPDATE_STRING';
  */
 export const updateString = (value: string) => {
   return {
-    type: UPDATE_TIME,
+    type: UPDATE_STRING,
     value
   };
 }
@@ -51,7 +51,7 @@ export const updateStringAsync = (value: string, delay: number = 2000) => {
  * action was passed in.
  */
 
-export default {{name}}Reducer(state = initialState, action): {} {
+export default function {{name}}Reducer(state = initialState, action) {
   switch (action.type) {
   case UPDATE_STRING:
     return {

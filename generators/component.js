@@ -28,6 +28,6 @@ exports.gen = function (Filament, flags, arg) {
   Filament.regexWrite(
     'storybook/stories/index.js',
     /(\n\/\/ DO NOT MOVE COMMENT\n)/gim ,
-    'import ' + arg + ' from \'app/components/' + arg + '/stories\';\n$1'
+    '$1import \'app/components/' + arg + '/stories\';\n'
     );
 };

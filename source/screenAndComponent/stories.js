@@ -10,7 +10,7 @@ import { storiesOf } from '@storybook/react-native';
 import {{name}} from '.';
 
 storiesOf('{{name}}', module)
-  .addDecorator(getStory => <View>{getStory()}</View>)
+  .addDecorator(getStory => <View style={{flex: 1}}>{getStory()}</View>)
   .add('no props', () => (
     <{{name}} />
   ));
