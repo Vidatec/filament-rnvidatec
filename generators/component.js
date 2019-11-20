@@ -15,7 +15,7 @@ exports.gen = async function (Filament, flags, arg) {
   let templatePath = null;
 
   if (isClass === 'Class') {
-    templatePath = 'screenAndComponent/index.class.js';
+    templatePath = 'screenAndComponent/index.class.noredux.js';
   } else {
     templatePath = 'screenAndComponent/index.functional.js';
   }
