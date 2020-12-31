@@ -2,15 +2,9 @@ const component = require('./generators/component');
 const screen = require('./generators/screen');
 const network = require('./generators/network');
 const redux = require('./generators/redux');
+const context = require('./generators/context');
 
 exports.cli = {
-  _func: {
-    desc: 'Test CLI',
-    run: () => {
-      console.log('👋  Hello!');
-    }
-  },
-
   new: {
     screen: {
       _func: {
@@ -51,6 +45,16 @@ exports.cli = {
           desc : 'network_name'
         }
       }
-    }
+    },
+    context: {
+      _func: {
+        desc: 'Generate a context',
+        run: context.gen,
+        arg: {
+          required : true,
+          desc : 'context_name'
+        }
+      }
+    },
   }
 }
