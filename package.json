@@ -1,6 +1,6 @@
 {
   "name": "@vidatec/filament-rnvidatec",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Filament package for react-native-template-vidatec",
   "repository": "github:vidatec/filament-rnvidatec",
   "main": "index.js",
