@@ -9,9 +9,7 @@ const {{name}}ContextProvider = ({children}) => {
   const [contextValue, setContextValue] = useState(null);
   return (
     <{{name}}Context.Provider
-      value={{
-        contextValue, setContextValue
-      }}>
+      value=\{{contextValue, setContextValue}}>
       {children}
     </{{name}}Context.Provider>
   );
@@ -29,4 +27,4 @@ function with{{name}}Context (Component) {
   };
 }
 
-export {{{name}}ContextProvider, {{name}}Context, {{name}}ContextConsumer, with{{name}}Context};
+export { {{name}}ContextProvider, {{name}}Context, {{name}}ContextConsumer, with{{name}}Context };
